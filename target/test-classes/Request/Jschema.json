@@ -1,0 +1,77 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome3",
+    "definitions": {
+        "Welcome3": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "data": {
+                    "$ref": "#/definitions/Data"
+                }
+            },
+            "required": [
+                "data"
+            ],
+            "title": "Welcome3"
+        },
+        "Data": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Job Title": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
+                },
+                "Job Company Name": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
+                },
+                "Job Location": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
+                },
+                "Job Type": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
+                },
+                "Job Posted time": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
+                },
+                "Job Description": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
+                },
+                "Job Id": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "Job Company Name",
+                "Job Description",
+                "Job Id",
+                "Job Location",
+                "Job Posted time",
+                "Job Title",
+                "Job Type"
+            ],
+            "title": "Data"
+        }
+    }
+}
